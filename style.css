@@ -1,0 +1,183 @@
+.square{
+    margin: auto;
+    font-size: 13px;
+
+    color: black;
+    background-color: white;
+
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+    padding: 4px; 
+    text-align: center;
+
+    height: 50px;
+    width: 50px;
+    
+    display: inline-block;
+    margin: 5px;
+
+    transition: 0.5s;
+} 
+
+.square:hover{
+    color: white;
+    background-color: black;
+
+}
+
+#board{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+#hoverController,#hoverMoveSet{
+    visibility: hidden;
+    
+    position: absolute;
+    right: 30px;
+    width: 350px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: -430px;
+
+    border-radius: 4px;
+}
+
+
+#hoverOutOfRange{
+    background-color: red;
+}
+
+h4{
+    font-size: 16px;
+}
+
+#placeHovers, #moveHovers,#setBoardSize{
+    margin-top: 8px;
+}
+
+.arrow-up {
+    margin-left: 8px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    transition: 0.5s;
+  }
+  #resultHoverOne{
+    right: 0;
+    top: 30%;
+    max-width: 350px;
+    position: absolute;    
+}
+#resultHoverTwo{
+    right: 0;
+    top: 50%;
+    max-width: 350px;
+    position: absolute
+}
+  .arrow-down {
+    margin-left: 8px; 
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid black;
+    transition: 0.5s;
+  }
+  
+  .arrow-right {
+    margin-left: 14px;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    border-left: 10px solid black;
+    transition: 0.5s;
+  }
+  
+  .arrow-left {
+    margin-left: 9px;
+    margin-bottom: 10px;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid black; 
+    transition: 0.5s;
+  }
+
+  @media (max-width: 1010px){
+    .square{
+        font-size: 9px;
+        padding: 2px;
+        height: 40px;
+        width: 40px;
+    }
+    .arrow-up {
+        margin-left: 6px;
+    }  
+    .arrow-down{
+        margin-left: 6px;
+    }  
+}
+
+@media (max-width: 930px){
+    #hoverController{
+        margin-top: 0px;
+        position: unset;
+        margin-left: 30px;
+
+    }
+    #hoverMoveSet{
+        margin-top: -225px;
+        position: unset;
+        margin-left: 30px;
+
+    }
+    .square{
+        font-size: 11px;
+        padding: 2px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .arrow-up {
+        margin-left: 8px;
+    } 
+    
+    .arrow-down{
+        margin-left: 8px;
+    }
+    #resultHoverOne{
+        max-width: 350px;
+        position: unset; 
+        margin-top: -230px;    
+    }
+    #resultHoverTwo{
+        max-width: 350px;
+        position: unset;
+        margin-top: 50px;
+    }
+}
+
+#formForTheArea{
+    margin: 0;
+    margin-left: 50px;
+    size: 50px;
+    position: absolute;
+    top: 8%;
+}
